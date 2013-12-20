@@ -1,0 +1,171 @@
+extends layout
+
+block meta
+
+  title SeattleJS - Backbone.js Testing
+  meta(name='description', content='Backbone.js Testing')
+  meta(name='author', content='Ryan Roemer')
+
+block slides
+
+  section#title.title
+    h1 Backbone.js Testing (A Book!)
+    h3
+      a(href="http://www.meetup.com/seattlejs/") SeattleJS
+      |  - Dec. 19th, 2013
+    p
+      a(href='http://loose-bits.com') Ryan Roemer
+      |  |&nbsp;
+      a(href='http://twitter.com/ryan_roemer') @ryan_roemer
+    p
+      a(href='http://twitter.com/FormidableLabs') @FormidableLabs
+
+  section
+    section
+      div
+        a.image(href="http://formidablelabs.com")
+          img(class="logo-white",
+              alt="Formidable Labs",
+              src="img/sponsors/formidable.png",
+              width="90%")
+
+  section
+    section
+      :markdown
+        ## The Frontend!
+
+        Web apps are getting very **frontend heavy**.
+
+    section
+      :markdown
+        ## ... but Tested?
+
+        The frontend is **hard** to test.
+
+        Asynchronous events, timing, browsers, technologies.
+
+  section
+    section
+      :markdown
+        ## My Journey
+
+        Began in the difficult days of Rhino and Env.js.
+
+        -----------
+
+        Recently led development on a very large Backbone.js app and needed to
+        deeply test it.
+
+    section
+      :markdown
+        ## Getting better
+
+        Revisited the area and found things were **much better** and
+        that the area had become really **exciting**!
+
+    section
+      :markdown
+        ## A Book
+
+        And then I got roped into writing a book.
+
+    section
+      :markdown
+        ## A Lightning Talk
+
+        About a year ago I gave a lightning talk about a book I was writing.
+
+  section
+    section
+      :markdown
+        ## Testing on the Frontend
+
+        * Test harnesses / infrastructure
+        * Suites
+        * Assertions
+        * Fakes
+        * Automation
+
+    section
+      :markdown
+        ## Focus
+
+        * Unit tests (not functional tests)
+        * Test speed
+        * Minimal dependencies, no network
+        * Fake it to keep things simple
+        * Automate it
+
+    section
+      :markdown
+        ## Test Libraries
+
+        * **[Mocha](http://visionmedia.github.com/mocha/)**: Framework
+        * **[Chai](http://chaijs.com/)**: Assertions
+        * **[Sinon.JS](http://sinonjs.org/)**: Fakes - spies and stubs
+
+    section
+      :markdown
+        ## Mocha
+
+        * **Spec**: A **test**.
+        * **Suite**: A collection of **specs** or **suites**.
+
+      pre
+        code.javascript
+          include ../example/js/spec/mocha-suite.spec.js
+
+    section
+      :markdown
+        ## Chai Assertions
+
+        * Natural language syntax. (`to`, `be`, `been`, `have`)
+        * Chained assertions. (`and`)
+
+      pre
+        code.javascript
+          include ../example/js/spec/hello.spec.js
+
+    section
+      :markdown
+        ## Sinon.JS Fakes
+
+        Dependencies, complexities? Fake it!
+
+        * [**Spies**](http://sinonjs.org/docs/#spies): *Observe* function behavior.
+        * [**Stubs**](http://sinonjs.org/docs/#stubs): *Spies* that *replace* behavior.
+        * [**Fake Server**](http://sinonjs.org/docs/#server): Override `$.ajax`, etc.
+
+    section
+      :markdown
+        ## Automation
+
+        Drive our frontend tests with
+        [**PhantomJS**](http://phantomjs.org/) using
+        [**Mocha-PhantomJS**](https://github.com/metaskills/mocha-phantomjs)
+
+  section
+    section
+      :markdown
+        ## Since Then ...
+
+    section
+      h2 It Got Published
+      div
+        a.image(href="http://backbone-testing.com")
+          img.book(alt="Backbone.js Testing",
+                   src="img/sponsors/backbone-testing.jpg")
+
+
+  section#thanks
+    h1 Thanks!
+    p.last
+      a(href="http://loose-bits.com") Ryan Roemer
+      |  |&nbsp;
+      a(href="http://twitter.com/ryan_roemer") @ryan_roemer
+
+    div.last-links
+      div.next
+        a(href="http://formidablelabs.com") Formidable Labs
+      div
+        a(href="http://backbone-testing.com") backbone-testing.com
