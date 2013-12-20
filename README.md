@@ -1,10 +1,7 @@
-Code Fellows - Learn Frontend Testing
-=====================================
+SeattleJS - Backbone.js Testing
+===============================
 
-Talk presentation and demo materials for my 12/17/2013 [Code Fellows][cf]
-workshop, "Learn Frontend Testing".
-
-[cf]: https://www.codefellows.org/
+Talk presentation and demo materials for my 12/19/2013 SeattleJS lightning talk.
 
 Building the Slide Deck
 =======================

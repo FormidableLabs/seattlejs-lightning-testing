@@ -14,5 +14,4 @@ $ npm install
 
 to install the necessary software.
 
-[cf]: https://www.codefellows.org/
 [nodejs]: http://nodejs.org/download/
